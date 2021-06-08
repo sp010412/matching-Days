@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table, tr, th {
+    border: 5px black solid;
+    padding: 5%;
+    margin-bottom: 50px;
+}
+
+.dates {
+    text-align: center;
+    display:list-item
+}
