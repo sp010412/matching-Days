@@ -2,18 +2,41 @@ h1 {
     text-align: center;
 }
 
-table {
+/* table {
     margin: auto;
     border-collapse: collapse;
+    font-size: 10px;
+    text-align: center;
+
+} */
+
+/* table, tr, th {
+    border: 5px black solid;
+    margin-bottom: 50px;
+} */
+
+ul {
+    list-style: none;
 }
 
-table, tr, th {
+li {
     border: 5px black solid;
-    padding: 5%;
-    margin-bottom: 50px;
+    display: inline-block;
 }
 
 .dates {
     text-align: center;
-    display:list-item
+    display: list-item
+}
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="device-widli, initial-scale=1.0"> -->
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,23 +12,24 @@
 <body>
     <h1>Matching Days</h1>
     <div>
-        <table>
-            <tr>
-                <th>MONDAY</th>
-                <th>TUESDAY</th>
-                <th>WEDNESDAY</th>
-                <th>THURSDAY</th>
-                <th>FRIDAY</th>
-                <th>SATURDAY</th>
-                <th>SUNDAY</th>
-            </tr>
-        </table>
+        <ul id="table" >
+            <li class="day" value="Sunday">SUNDAY</li>
+                <li class="day" value="Monday">MONDAY</li>
+                <li class="day" value="Tuesday">TUESDAY</li>
+                <li class="day" value="Wednesday">WEDNESDAY</li>
+                <li class="day" value="liursday">THURSDAY</li>
+                <li class="day" value="Friday">FRIDAY</li>
+                <li class="day" value="Saturday">SATURDAY</li>
+            
+        </ul>
     </div>
+
     <div class="dates">
         <input type="date" id="dateOne" name="dateOne">
         <input type="date" id="dateTwo" name="dateTwo">
-        
     </div>
 </body>
+<script src="factory.js"></script>
+<script src="matching.js"></script>
 
 </html>
