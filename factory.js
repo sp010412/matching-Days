@@ -1,28 +1,24 @@
 function dates() {
 
-    var arr = ["Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday", "Sunday"];
+    var arr = ["Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday", "Sunday"]
 
-    var day = new Array(7);
-    day[0] = "Sunday";
-    day[1] = "Monday";
-    day[2] = "Tuesday";
-    day[3] = "Wednesday";
-    day[4] = "Thursday";
-    day[5] = "Friday";
-    day[6] = "Saturday";
-
-
+    var date1 = "";
+    var date2 = "";
 
     function find(firstD) {
-        var date1 = new Date(firstD);
-    return aOne = day[date1.getDay()];   
+        if (date1 = new Date(firstD)) {
+            return aOne = arr[date1.getDay()];
+        }
     }
-
     function findTwo(secondD) {
-    var date2 = new Date(secondD);
-    return aTwo = day[date2.getDay()];
+        if (date2 = new Date(secondD)) {
+            return aTwo = arr[date2.getDay()];
+        }
     }
 
+    // function color() {
+
+    // }
 
 
     return {

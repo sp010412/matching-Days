@@ -15,7 +15,8 @@ dateOneElem.onchange = () => {
 
   for(var i=0; i<list.length;i++){
     var listIn = list[i];
-    listIn.classList.remove('orange')
+    listIn.classList.remove('orange');
+    listIn.classList.remove('green');
   }
 
   if (n) {
@@ -38,9 +39,13 @@ dateTwoElem.onchange = () => {
 
   for(var i=0; i<list.length;i++){
     var listIn = list[i];
-    listIn.classList.remove('blue')
+    listIn.classList.remove('blue');
+    listIn.classList.remove('green');
   }
 
+  if (m) {
+    m.classList.add("blue")
+  }
   
   if(n === m){
     n.classList.add("green");
