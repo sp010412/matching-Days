@@ -48,8 +48,5 @@ function dates() {
         setDateTwo,
         getDateTwo,
         color,
-
-
-
     }
 }
