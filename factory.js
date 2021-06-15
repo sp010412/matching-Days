@@ -12,7 +12,7 @@ function dates() {
         date1 = new Date(firstD);
         aOne = arr[date1.getDay()];
     }
-    function getDate(firstD) {
+    function getDate() {
         return aOne;
     }
 
@@ -21,17 +21,35 @@ function dates() {
         aTwo = arr[date2.getDay()];
     }
 
-    function getDateTwo(firstD) {
+    function getDateTwo() {
         return aTwo;
     }
 
-function color() {
+    function color(date1, date2) {
 
-}
+        if (date1 != "") {
+            return aTwo.color = "orange";
+        }
+        if (date2 != "") {
+            return aOne.color = "orange"; "blue";
+        }
+        if (date1 === date2) {
+            return aOne.color = "green";
+
+        } else {
+            return aTwo.color = "green"
+        }
+    }
 
 
-return {
-    find,
-    findTwo,
-}
+    return {
+        setDate,
+        getDate,
+        setDateTwo,
+        getDateTwo,
+        color,
+
+
+
+    }
 }
