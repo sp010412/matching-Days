@@ -5,24 +5,33 @@ function dates() {
     var date1 = "";
     var date2 = "";
 
-    function find(firstD) {
-        if (date1 = new Date(firstD)) {
-            return aOne = arr[date1.getDay()];
-        }
+    var aOne;
+    var aTwo;
+
+    function setDate(firstD) {
+        date1 = new Date(firstD);
+        aOne = arr[date1.getDay()];
     }
-    function findTwo(secondD) {
-        if (date2 = new Date(secondD)) {
-            return aTwo = arr[date2.getDay()];
-        }
+    function getDate(firstD) {
+        return aOne;
     }
 
-    // function color() {
-
-    // }
-
-
-    return {
-        find,
-        findTwo,
+    function setDateTwo(secondD) {
+        date2 = new Date(secondD);
+        aTwo = arr[date2.getDay()];
     }
+
+    function getDateTwo(firstD) {
+        return aTwo;
+    }
+
+function color() {
+
+}
+
+
+return {
+    find,
+    findTwo,
+}
 }
