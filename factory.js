@@ -1,52 +1,47 @@
 function dates() {
 
-    var arr = ["Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday", "Sunday"]
+    var weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-    var date1 = "";
-    var date2 = "";
+    var theDate1;
+    var theDate2;
 
-    var aOne;
-    var aTwo;
-
-    function setDate(firstD) {
-        date1 = new Date(firstD);
-        aOne = arr[date1.getDay()];
-    }
-    function getDate() {
-        return aOne;
+    function getDay(weekDay) {
+        theDate1 = new Date(weekDay);
+        return weekDays[theDate1.getDay()];
     }
 
-    function setDateTwo(secondD) {
-        date2 = new Date(secondD);
-        aTwo = arr[date2.getDay()];
+    function getDayTwo(weekDay) {
+        theDate2 = new Date(weekDay);
+        return weekDays[theDate2.getDay()];
     }
 
-    function getDateTwo() {
-        return aTwo;
-    }
+    function colorOne() {
 
-    function color(date1, date2) {
-
-        if (date1 != "") {
-            return aTwo.color = "orange";
+        if (theDate1 != "") {
+            return theDate1.color = "orange";
         }
-        if (date2 != "") {
-            return aOne.color = "orange"; "blue";
-        }
-        if (date1 === date2) {
-            return aOne.color = "green";
+    }
+    function colorTwo() {
 
-        } else {
-            return aTwo.color = "green"
+        if (theDate2 != "") {
+            return theDate2.color = "blue";
         }
     }
 
+    // function sameDay() {
 
+    //     if (theDate1 === theDate2 && theDate1 !== undefined && theDate2 !== undefined) {
+
+    //         weekDays[theDate1].color = "green";
+    //         return weekDays
+    //     }
+    // }
+    
     return {
-        setDate,
-        getDate,
-        setDateTwo,
-        getDateTwo,
-        color,
+        getDay,
+        getDayTwo,
+        colorOne,
+        colorTwo,
+        //sameDay,
     }
 }
