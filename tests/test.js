@@ -16,14 +16,16 @@ describe('Matching-Days_Project', function () {
     });
     it('it should add correct color for second date', function () {
         let tests = dates();
-        tests.getDayTwo("Thursday")
+        tests.getDayTwo("2018-05-02")
         assert.equal(tests.colorTwo(), "blue");
     });
 
-    // it('it should add the same color when first and second date are equal', function () {
-    //     let tests = dates();
-
-    // });
+    it('it should add the same color when first and second date are equal', function () {
+        let tests = dates();
+        tests.getDay('2021-06-09')
+        tests.getDayTwo("2018-05-02")
+        assert.equal(tests.sameDay(), "green");
+    });
 
 
 });

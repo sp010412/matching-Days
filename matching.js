@@ -1,55 +1,41 @@
 var dateOneElem = document.getElementById("dateOne");
 var dateTwoElem = document.getElementById("dateTwo");
+var list = document.getElementsByTagName("li");
 
-var dayI = document.querySelectorAll(".day")
-
-
-var list = document.getElementsByTagName("li")
+var factoryInsta = dates()
 
 dateOneElem.onchange = () => {
-  var d = new Date(dateOneElem.value);
-  var n = dayI[d.getDay()];
 
-  var c = new Date(dateTwoElem.value);
-  var m = dayI[c.getDay()];
+  var n = factoryInsta.getDay(dateOneElem.value)
+  var m = factoryInsta.getDayTwo(dateTwoElem.value)
 
-  for(var i=0; i<list.length;i++){
+
+  for (var i = 0; i < list.length; i++) {
     var listIn = list[i];
     listIn.classList.remove('orange');
     listIn.classList.remove('green');
   }
-
-  if (n) {
-    n.classList.add("orange")
-  }
+  document.getElementById(n).classList.add("orange")
 
   if(n === m){
-    n.classList.add("green");
-    m.classList.add("green");
+    document.getElementById(n).classList.add("green");
   }
 
 }
 
 dateTwoElem.onchange = () => {
-  var c = new Date(dateTwoElem.value);
-  var m = dayI[c.getDay()];
-
-  var d = new Date(dateOneElem.value);
-  var n = dayI[d.getDay()];
-
-  for(var i=0; i<list.length;i++){
+  var m = factoryInsta.getDayTwo(dateTwoElem.value)
+  var n = factoryInsta.getDay(dateOneElem.value)
+  
+  for (var i = 0; i < list.length; i++) {
     var listIn = list[i];
     listIn.classList.remove('blue');
     listIn.classList.remove('green');
   }
+  document.getElementById(m).classList.add("blue")
 
-  if (m) {
-    m.classList.add("blue")
-  }
-  
   if(n === m){
-    n.classList.add("green");
-    m.classList.add("green");
+    document.getElementById(n).classList.add("green");
   }
 }
 
