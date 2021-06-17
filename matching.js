@@ -4,12 +4,13 @@ var list = document.getElementsByTagName("li");
 var displayElem = document.querySelector(".display")
 var tableElem = document.querySelector(".table")
 
-var factoryInsta = dates()
 
 
 var templateSource = document.querySelector(".userTemplate3").innerHTML;
 var userTemplate = Handlebars.compile(templateSource);
 
+
+var factoryInsta = date();
 displayElem.innerHTML = userTemplate({ userInsta: factoryInsta.myList() })
 
 
