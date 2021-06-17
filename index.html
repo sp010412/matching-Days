@@ -7,21 +7,30 @@
     <!-- <meta name="viewport" content="device-widli, initial-scale=1.0"> -->
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+    <script type="text/x-template" class="userTemplate3">
+        <ul>
+        {{#each userInsta}}
+        <li id="{{this}}" class="table">{{this}}</li>
+        {{/each}}
+        </ul>
+    </script>
 </head>
 
 <body>
     <h1>Matching Days</h1>
-    <div>
-        <ul id="table" >
-            <li class="day" id="Sunday">SUNDAY</li>
-                <li class="day"id="Monday" >MONDAY</li>
-                <li class="day" id="Tuesday" >TUESDAY</li>
-                <li class="day" id="Wednesday">WEDNESDAY</li>
-                <li class="day" id="Thursday">THURSDAY</li>
-                <li class="day" id="Friday">FRIDAY</li>
-                <li class="day" id="Saturday">SATURDAY</li>
-            
-        </ul>
+    <div class="display">
+       
+            <!-- <li id="Sunday">SUNDAY</li>
+            <li id="Monday">MONDAY</li>
+            <li id="Tuesday">TUESDAY</li>
+            <li id="Wednesday">WEDNESDAY</li>
+            <li id="Thursday">THURSDAY</li>
+            <li id="Friday">FRIDAY</li>
+            <li id="Saturday">SATURDAY</li>
+ -->
+    
     </div>
 
     <div class="dates">

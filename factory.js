@@ -7,6 +7,10 @@ function dates() {
     var day1;
     var day2;
 
+    function myList(){
+        return weekDays
+    }
+
     function getDay(weekDay) {
         theDate1 = new Date(weekDay);
         day1 = weekDays[theDate1.getDay()];
@@ -41,6 +45,7 @@ function dates() {
     }
 
     return {
+        myList,
         getDay,
         getDayTwo,
         colorOne,
