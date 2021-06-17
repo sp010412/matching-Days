@@ -40,9 +40,13 @@ function dates() {
 
         if (day1 === day2 && theDate1 != "" && theDate2 != "") {
 
-            return day1.color = "green";
+            return day1.color = "green"
+        } else{
+            return day1.color = "green"
         }
+        
     }
+
 
     return {
         myList,
@@ -50,6 +54,6 @@ function dates() {
         getDayTwo,
         colorOne,
         colorTwo,
-        sameDay,
+        sameDay,  
     }
 }

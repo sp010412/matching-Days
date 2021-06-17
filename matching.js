@@ -19,14 +19,14 @@ dateOneElem.onchange = () => {
 
   for (var i = 0; i < list.length; i++) {
     var listIn = list[i];
-    listIn.classList.remove('orange');
-    listIn.classList.remove('green');
+    listIn.classList.remove(factoryInsta.colorOne());
+    listIn.classList.remove(factoryInsta.sameDay());
   }
   if (n) {
-    document.getElementById(n).classList.add("orange")
+    document.getElementById(n).classList.add(factoryInsta.colorOne())
   }
   if (n === m) {
-    document.getElementById(n).classList.add("green")
+    document.getElementById(n).classList.add(factoryInsta.sameDay())
   }
 }
 
@@ -38,14 +38,14 @@ dateTwoElem.onchange = () => {
 
   for (var i = 0; i < list.length; i++) {
     var listIn = list[i];
-    listIn.classList.remove('blue');
-    listIn.classList.remove('green');
+    listIn.classList.remove(factoryInsta.colorTwo());
+    listIn.classList.remove(factoryInsta.sameDay());
   }
   if (m) {
-    document.getElementById(m).classList.add("blue")
+    document.getElementById(m).classList.add(factoryInsta.colorTwo())
   }
   if (n === m) {
-    document.getElementById(n).classList.add("green");
+    document.getElementById(n).classList.add(factoryInsta.sameDay());
   }
 }
 
