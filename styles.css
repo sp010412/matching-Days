@@ -8,16 +8,22 @@ h1 {
     font-size: 45px;
 }
 
+.display{
+    text-align: center;
+}
+
 ul {
     list-style: none;
-    margin-left: 12%;
 }
 
 li {
-    border: 5px black solid;
+    border: 3px black solid;
     display: inline-block;
     padding: 25px;
     font-size: 18px;
+    margin-right: -8px;
+    font-weight: bold;
+
 }
 
 .inputes {
