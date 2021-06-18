@@ -31,6 +31,10 @@ li {
     display: list-item
 }
 
+.split{
+    display: inline-block;
+}
+
 .orange {
     background-color: orange;
 }
@@ -41,4 +45,15 @@ li {
 
 .green {
     background-color: green;
+}
+
+@media (max-width:320px) {
+
+ul{
+    width: 50%;
+}
+body{
+    height: 100vh;
+}
+
 }
