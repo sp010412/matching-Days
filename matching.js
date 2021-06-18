@@ -40,7 +40,7 @@ dateTwoElem.onchange = () => {
   for (var i = 0; i < list.length; i++) {
     var listIn = list[i];
     listIn.classList.remove(factoryInsta.colorTwo());
-    listIn.classList.remove(factoryInsta.sameDay());
+    listIn.classList.remove(factoryInsta.sameDayTwo());
   }
   if (m) {
     document.getElementById(m).classList.add(factoryInsta.colorTwo())

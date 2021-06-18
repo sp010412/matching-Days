@@ -7,7 +7,7 @@ function date() {
     var day1;
     var day2;
 
-    function myList(){
+    function myList() {
         return weekDays
     }
 
@@ -37,15 +37,14 @@ function date() {
     }
 
     function sameDay() {
-
-        if (day1 === day2 && theDate1 != "" && theDate2 != "") {
-
-            return day1.color = "green"
-        } else{
-            return day1.color = "green"
-        }
-        
+        return "green"
     }
+
+    function sameDayTwo() {
+        return "green"
+    }
+
+
 
 
     return {
@@ -54,6 +53,7 @@ function date() {
         getDayTwo,
         colorOne,
         colorTwo,
-        sameDay,  
+        sameDay,
+        sameDayTwo,
     }
 }
